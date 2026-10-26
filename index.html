@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>CÔNG THỨC CHIHABCR - MASTER VIP</title>
+<style>
+* {
+box-sizing: border-box;
+-webkit-tap-highlight-color: transparent;
+}
+body {
+background: linear-gradient(135deg, #090d16 0%, #111827 100%);
+color: #f8fafc;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+margin: 0;
+padding: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+position: relative;
+}
+.watermark {
+position: absolute;
+top: 10px;
+right: 15px;
+font-size: 0.75rem;
+color: #38bdf8;
+font-weight: bold;
+background: rgba(15, 23, 42, 0.8);
+padding: 4px 10px;
+border-radius: 6px;
+border: 1px solid #38bdf8;
+letter-spacing: 1px;
+box-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+}
+.container {
+width: 100%;
+max-width: 500px;
+background: #111827;
+border: 2px solid #0284c7;
+padding: 20px;
+border-radius: 16px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.9), 0 0 20px rgba(2, 132, 199, 0.2);
+position: relative;
+}
+h2 {
+text-align: center;
+color: #38bdf8;
+margin: 0 0 5px 0;
+font-size: 1.3rem;
+text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+letter-spacing: 0.5px;
+}
+.sub-title {
+text-align: center;
+color: #94a3b8;
+font-size: 0.75rem;
+margin-bottom: 15px;
+font-weight: bold;
+letter-spacing: 1px;
+}
+/* TAB BAR */
+.tab-bar {
+display: flex;
+background: #1f2937;
+border-radius: 8px;
+padding: 4px;
+margin-bottom: 20px;
+border: 1px solid #374151;
+}
+.tab-btn {
+flex: 1;
+padding: 10px 0;
+text-align: center;
+background: transparent;
+border: none;
+color: #9ca3af;
+font-weight: bold;
+font-size: 0.85rem;
+border-radius: 6px;
+cursor: pointer;
+transition: all 0.2s;
+}
+.tab-btn.active {
+background: #0284c7;
+color: #ffffff;
+box-shadow: 0 2px 6px rgba(2, 132, 199, 0.4);
+}
+.step-desc {
+font-size: 0.85rem;
+color: #cbd5e1;
+text-align: center;
+margin-bottom: 12px;
+}
+.welcome-banner {
+background: rgba(56, 189, 248, 0.1);
+border: 1px solid #38bdf8;
+color: #38bdf8;
+padding: 10px;
+border-radius: 8px;
+text-align: center;
+font-size: 0.85rem;
+font-weight: bold;
+margin-bottom: 15px;
+}
+/* ERROR PROMPT */
+.error-msg-box {
+background: rgba(220, 38, 38, 0.15);
+border: 1px solid #ef4444;
+color: #f87171;
+padding: 10px;
+border-radius: 8px;
+text-align: center;
+font-size: 0.85rem;
+font-weight: bold;
+margin-bottom: 15px;
+display: none;
+}
+.history-input-grid {
+display: flex;
+gap: 10px;
+justify-content: center;
+margin-bottom: 20px;
+}
+.btn-choice {
+flex: 1;
+padding: 14px 0;
+border: none;
+border-radius: 8px;
+font-size: 0.95rem;
+font-weight: bold;
+color: white;
+cursor: pointer;
+box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+transition: transform 0.1s;
+}
+.btn-choice:active { transform: scale(0.95); }
+.bg-p { background-color: #2563eb; }
+.bg-b { background-color: #dc2626; }
+.bg-t { background-color: #16a34a; }
+.setup-list {
+display: flex;
+flex-wrap: wrap;
+gap: 6px;
+justify-content: center;
+margin-bottom: 20px;
+min-height: 55px;
+background: #1f2937;
+padding: 10px;
+border-radius: 8px;
+border: 1px solid #374151;
+}
+.history-badge {
+width: 30px;
+height: 30px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: bold;
+font-size: 0.8rem;
+color: white;
+box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+.live-road-panel {
+background: #1f2937;
+border: 1px solid #374151;
+padding: 10px;
+border-radius: 8px;
+margin-bottom: 15px;
+text-align: center;
+}
+.live-road-title {
+font-size: 0.75rem;
+color: #38bdf8;
+margin-bottom: 6px;
+font-weight: bold;
+letter-spacing: 0.5px;
+}
+.live-road-flex {
+display: flex;
+gap: 6px;
+justify-content: center;
+flex-wrap: wrap;
+min-height: 32px;
+align-items: center;
+}
+.road-badge {
+width: 28px;
+height: 28px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: bold;
+font-size: 0.75rem;
+color: white;
+}
+.form-group {
+margin-bottom: 12px;
+}
+.form-group label {
+display: block;
+font-size: 0.8rem;
+color: #94a3b8;
+margin-bottom: 4px;
+font-weight: bold;
+}
+input[type="text"], input[type="password"], input[type="number"] {
+padding: 10px 12px;
+background: #1f2937;
+border: 1px solid #4b5563;
+color: #fff;
+border-radius: 8px;
+font-size: 0.95rem;
+width: 100%;
+}
+input:focus {
+border-color: #38bdf8;
+outline: none;
+box-shadow: 0 0 8px rgba(56, 189, 248, 0.4);
+}
+.result-box {
+background: #1f2937;
+padding: 15px;
+border-radius: 10px;
+border: 1px solid #374151;
+display: none;
+}
+.loading-container {
+text-align: center;
+padding: 15px 0;
+}
+.loading-title {
+font-size: 0.85rem;
+color: #38bdf8;
+margin-bottom: 8px;
+font-weight: bold;
+}
+.progress-bar-bg {
+width: 100%;
+height: 10px;
+background: #0f172a;
+border-radius: 5px;
+overflow: hidden;
+border: 1px solid #374151;
+}
+.progress-bar-fill {
+height: 100%;
+width: 0%;
+background: linear-gradient(90deg, #0284c7, #38bdf8);
+border-radius: 5px;
+transition: width 0.1s linear;
+}
+.progress-text {
+font-size: 0.9rem;
+color: #fbbf24;
+font-weight: bold;
+margin-top: 6px;
+}
+.trend-banner {
+background: #111827;
+border-left: 4px solid #fbbf24;
+padding: 10px;
+border-radius: 4px;
+margin-bottom: 12px;
+text-align: center;
+font-size: 0.85rem;
+font-weight: bold;
+color: #fbbf24;
+}
+.ai-grid {
+display: flex;
+flex-direction: column;
+gap: 8px;
+margin-top: 10px;
+}
+.ai-card {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: #111827;
+padding: 10px 14px;
+border-radius: 8px;
+border: 1px solid #374151;
+}
+.ai-name {
+font-size: 0.9rem;
+font-weight: bold;
+color: #38bdf8;
+}
+.ai-choice {
+padding: 5px 10px;
+border-radius: 6px;
+font-weight: bold;
+font-size: 0.8rem;
+color: white;
+box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.bg-p-badge { background-color: #2563eb; }
+.bg-b-badge { background-color: #dc2626; }
+.bg-low-badge { background-color: #4b5563; opacity: 0.85; }
+.ai-tracker-panel {
+margin-top: 15px;
+background: #111827;
+border: 1px solid #374151;
+padding: 10px;
+border-radius: 8px;
+}
+.tracker-title {
+font-size: 0.75rem;
+color: #fbbf24;
+text-align: center;
+font-weight: bold;
+margin-bottom: 8px;
+}
+.tracker-row {
+display: flex;
+justify-content: space-between;
+font-size: 0.8rem;
+padding: 4px 0;
+border-bottom: 1px dashed #1f2937;
+}
+.tracker-row:last-child { border-bottom: none; }
+.badge-win { color: #4ade80; font-weight: bold; }
+.badge-lose { color: #f87171; font-weight: bold; }
+.sync-panel {
+margin-top: 15px;
+background: #111827;
+padding: 12px;
+border-radius: 8px;
+border: 1px dashed #fbbf24;
+text-align: center;
+}
+.sync-title {
+font-size: 0.75rem;
+color: #fbbf24;
+margin-bottom: 8px;
+font-weight: bold;
+}
+.sync-buttons {
+display: flex;
+gap: 8px;
+}
+.sync-btn {
+flex: 1;
+padding: 8px;
+border: none;
+border-radius: 6px;
+font-weight: bold;
+color: #fff;
+cursor: pointer;
+font-size: 0.8rem;
+}
+.btn-reset {
+background: transparent;
+border: 1px solid #4b5563;
+color: #9ca3af;
+padding: 6px 12px;
+font-size: 0.8rem;
+border-radius: 6px;
+cursor: pointer;
+float: right;
+}
+.btn-action {
+background: #0284c7;
+color: white;
+border: none;
+padding: 10px 14px;
+border-radius: 6px;
+font-weight: bold;
+cursor: pointer;
+width: 100%;
+margin-top: 5px;
+}
+.btn-action:hover { background: #0369a1; }
+/* ADMIN TABLE */
+.user-table {
+width: 100%;
+border-collapse: collapse;
+font-size: 0.8rem;
+margin-top: 10px;
+}
+.user-table th, .user-table td {
+border: 1px solid #374151;
+padding: 8px 6px;
+text-align: center;
+}
+.user-table th {
+background: #1f2937;
+color: #38bdf8;
+}
+.btn-sm {
+padding: 4px 8px;
+font-size: 0.75rem;
+border-radius: 4px;
+border: none;
+cursor: pointer;
+font-weight: bold;
+}
+.btn-del { background: #dc2626; color: white; }
+.btn-edit { background: #d97706; color: white; margin-right: 4px; }
+.coin-tag {
+color: #fbbf24;
+font-weight: bold;
+}
+</style>
+</head>
+<body>
+<div class="watermark">chihaobcr</div>
+<div class="container">
+<h2>⚡ CÔNG THỨC CHIHABCR</h2>
+<div class="sub-title">[ HỆ THỐNG DỰ ĐOÁN & QUẢN LÝ BẢO MẬT ]</div>
+<!-- MAIN TABS -->
+<div class="tab-bar">
+<button class="tab-btn active" id="tabBtnPlay" onclick="switchTab('play')">🎮 BÀN CHƠI</button>
+<button class="tab-btn" id="tabBtnAdmin" onclick="switchTab('admin')">👑 QUẢN LÝ ADMIN</button>
+</div>
+<!-- TAB 1: MÀN HÌNH CHƠI -->
+<div id="tabPlayContent">
+<!-- FORM ĐĂNG NHẬP NGƯỜI CHƠI -->
+<div id="playerLoginForm">
+<div class="step-desc">Vui lòng đăng nhập tài khoản để vào bàn chơi (2 Xu / ván):</div>
+<div class="error-msg-box" id="playerErrorBox">Thông tin đăng nhập không chính xác! Vui lòng liên hệ Admin!</div>
+<div class="form-group">
+<label>Tên Đăng Nhập</label>
+<input type="text" id="playerUsername" placeholder="Nhập tài khoản...">
+</div>
+<div class="form-group">
+<label>Mật Khẩu Cấp 1</label>
+<input type="password" id="playerPass1" placeholder="Nhập mật khẩu cấp 1...">
+</div>
+<div class="form-group">
+<label>Mật Khẩu Cấp 2</label>
+<input type="password" id="playerPass2" placeholder="Nhập mật khẩu cấp 2...">
+</div>
+<button class="btn-action" onclick="loginPlayer()">ĐĂNG NHẬP VÀO GAME</button>
+</div>
+<!-- MÀN HÌNH NHẬP 15 VÁN BAN ĐẦU -->
+<div id="setupSection" style="display: none;">
+<div class="welcome-banner" id="playerWelcomeBanner"></div>
+<div class="step-desc" id="setupStepText">Vui lòng chọn kết quả <strong>Ván thứ 1/15</strong> gần nhất:</div>
+<div class="setup-list" id="setupList">
+<span style="color:#9ca3af; font-size:0.85rem; line-height:36px;">Chưa nhập ván nào...</span>
+</div>
+<div class="history-input-grid">
+<button type="button" class="btn-choice bg-p" onclick="addSetupHistory('P')">PLAYER (P)</button>
+<button type="button" class="btn-choice bg-b" onclick="addSetupHistory('B')">BANKER (B)</button>
+<button type="button" class="btn-choice bg-t" onclick="addSetupHistory('T')">TIE (T)</button>
+</div>
+<button type="button" class="btn-reset" onclick="resetSetup()" style="width:100%;">Làm lại từ đầu</button>
+</div>
+<!-- MÀN HÌNH DỰ ĐOÁN CHÍNH -->
+<div id="gameSection" style="display: none;">
+<div style="margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+<div>
+<span style="font-size: 0.8rem; color: #38bdf8; display: block;">✓ Đã đồng bộ 15 ván</span>
+<span style="font-size: 0.85rem; color: #fbbf24; font-weight: bold;" id="displayPlayerCoins">Xu còn lại: 0 Xu</span>
+</div>
+<div>
+<button type="button" class="btn-reset" onclick="resetSetup()" style="margin-left: 6px;">Cài lại 15 ván</button>
+<button type="button" class="btn-reset" onclick="logoutPlayer()">Đăng xuất</button>
+</div>
+</div>
+<!-- BẢNG CẦU TRỰC QUAN -->
+<div class="live-road-panel">
+<div class="live-road-title">📈 BẢNG CẦU GẦN NHẤT (ĐỒNG BỘ LIÊN TỤC)</div>
+<div class="live-road-flex" id="liveRoadContainer"></div>
+</div>
+<div class="step-desc" style="margin-bottom: 10px; font-weight: bold; color: #fbbf24;">CHỌN KẾT QUẢ VÁN MỚI ĐỂ AI DỰ ĐOÁN (-2 XU):</div>
+<div class="history-input-grid" style="margin-bottom: 15px;">
+<button type="button" class="btn-choice bg-p" onclick="triggerPredict('P')">PLAYER (P)</button>
+<button type="button" class="btn-choice bg-b" onclick="triggerPredict('B')">BANKER (B)</button>
+<button type="button" class="btn-choice bg-t" onclick="triggerPredict('T')">TIE (T)</button>
+</div>
+<div class="result-box" id="resultBox">
+<!-- THANH LOADING 0-100% (3s) -->
+<div id="loadingView" class="loading-container" style="display: none;">
+<div class="loading-title">⚡ Đang đồng bộ 15 ván lịch sử & phân tích AI...</div>
+<div class="progress-bar-bg">
+<div class="progress-bar-fill" id="progressBarFill"></div>
+</div>
+<div class="progress-text" id="progressText">0%</div>
+</div>
+<div id="contentView" style="display: none;">
+<div class="trend-banner" id="tableTrendBanner">Đang phân tích nhịp bàn...</div>
+<div style="font-size: 0.8rem; color: #94a3b8; margin-bottom: 6px; font-weight: bold;">HỘI ĐỒNG 3 AI (DỰ ĐOÁN VÁN KẾ TIẾP):</div>
+<div class="ai-grid" id="aiGridContainer"></div>
+<!-- BẢNG THEO DÕI ĐÚNG / SAI -->
+<div class="ai-tracker-panel">
+<div class="tracker-title">📊 LỊCH SỬ ĐÚNG / SAI CỦA HỘI ĐỒNG AI</div>
+<div id="trackerContent">
+<div style="text-align: center; color: #64748b; font-size: 0.75rem;">Chưa có dữ liệu ván đấu nào được đồng bộ.</div>
+</div>
+</div>
+<!-- TAB ĐỒNG BỘ THỰC TẾ -->
+<div class="sync-panel">
+<div class="sync-title">⚓ XÁC NHẬN KẾT QUẢ THỰC TẾ VÁN VỪA RA ĐỂ CHẤM ĐIỂM AI:</div>
+<div class="sync-buttons">
+<button class="sync-btn bg-p" onclick="syncActualResult('P')">PLAYER (P)</button>
+<button class="sync-btn bg-b" onclick="syncActualResult('B')">BANKER (B)</button>
+<button class="sync-btn bg-t" onclick="syncActualResult('T')">TIE (T)</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB 2: MÀN HÌNH ADMIN -->
+<div id="tabAdminContent" style="display: none;">
+<!-- FORM ĐĂNG NHẬP ADMIN -->
+<div id="adminLoginForm">
+<div class="step-desc">Đăng nhập Quản Lý Admin cao cấp:</div>
+<div class="error-msg-box" id="adminErrorBox">Thông tin đăng nhập không chính xác! Vui lòng liên hệ Admin!</div>
+<div class="form-group">
+<label>Tên Đăng Nhập Admin</label>
+<input type="text" id="adminUsername" placeholder="Nhập tên tài khoản Admin...">
+</div>
+<div class="form-group">
+<label>Mật Khẩu Cấp 1</label>
+<input type="password" id="adminPass1" placeholder="Nhập mật khẩu cấp 1...">
+</div>
+<div class="form-group">
+<label>Mật Khẩu Cấp 2</label>
+<input type="password" id="adminPass2" placeholder="Nhập mật khẩu cấp 2...">
+</div>
+<button class="btn-action" style="background: #d97706;" onclick="loginAdmin()">ĐĂNG NHẬP ADMIN</button>
+</div>
+<!-- DASHBOARD MANAGEMENT ADMIN -->
+<div id="adminDashboard" style="display: none;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+<span style="font-size: 0.9rem; color: #fbbf24; font-weight: bold;">👑 XIN CHÀO ADMIN (lien1984)</span>
+<div>
+<button class="btn-sm" style="background: #10b981; color: white; padding: 6px 10px; font-weight: bold; margin-right: 4px;" onclick="adminJumpToPlay()">⚡ VÀO BÀN CHƠI NGAY</button>
+<button class="btn-sm" style="background: #4b5563; color: white;" onclick="logoutAdmin()">Thoát</button>
+</div>
+</div>
+<!-- TẠO TÀI KHOẢN MỚI -->
+<div style="background: #1f2937; padding: 12px; border-radius: 8px; border: 1px solid #374151; margin-bottom: 15px;">
+<div style="font-size: 0.85rem; color: #38bdf8; font-weight: bold; margin-bottom: 8px;">➕ CẤP TÀI KHOẢN NGƯỜI CHƠI MỚI</div>
+<div class="form-group">
+<label>Tên tài khoản</label>
+<input type="text" id="newAccUser" placeholder="Nhập tên tài khoản người chơi...">
+</div>
+<div class="form-group">
+<label>Mật khẩu Cấp 1</label>
+<input type="text" id="newAccP1" placeholder="Mật khẩu cấp 1...">
+</div>
+<div class="form-group">
+<label>Mật khẩu Cấp 2</label>
+<input type="text" id="newAccP2" placeholder="Mật khẩu cấp 2...">
+</div>
+<div class="form-group">
+<label>Số Xu khởi tạo</label>
+<input type="number" id="newAccCoins" placeholder="Số xu (Ví dụ: 100)" value="100">
+</div>
+<button class="btn-action" style="background: #10b981;" onclick="createPlayerAccount()">CẤP TÀI KHOẢN</button>
+</div>
+<!-- DANH SÁCH TÀI KHOẢN NGƯỜI CHƠI -->
+<div style="background: #1f2937; padding: 12px; border-radius: 8px; border: 1px solid #374151;">
+<div style="font-size: 0.85rem; color: #fbbf24; font-weight: bold; margin-bottom: 8px;">📜 DANH SÁCH NGƯỜI CHƠI & CHỈNH SỬA XU</div>
+<div style="overflow-x: auto;">
+<table class="user-table">
+<thead>
+<tr>
+<th>Tài khoản</th>
+<th>MK Cấp 1</th>
+<th>MK Cấp 2</th>
+<th>Số Xu</th>
+<th>Thao tác</th>
+</tr>
+</thead>
+<tbody id="userTableBody">
+<!-- Render bằng JS -->
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+// Âm thanh phím cơ
+function playKeyClickSound() {
+try {
+const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+const osc = audioCtx.createOscillator();
+const gainNode = audioCtx.createGain();
+osc.type = 'sine';
+osc.frequency.setValueAtTime(800, audioCtx.currentTime);
+osc.frequency.exponentialRampToValueAtTime(300, audioCtx.currentTime + 0.04);
+gainNode.gain.setValueAtTime(0.08, audioCtx.currentTime);
+gainNode.gain.linearRampToValueAtTime(0.001, audioCtx.currentTime + 0.04);
+osc.connect(gainNode);
+gainNode.connect(audioCtx.destination);
+osc.start();
+osc.stop(audioCtx.currentTime + 0.04);
+} catch(e) {}
+}
+// LƯU TRỮ DỮ LIỆU TÀI KHOẢN BẰNG LOCALSTORAGE
+function getStoredAccounts() {
+const data = localStorage.getItem('chihaobcr_accounts');
+if (data) {
+return JSON.parse(data);
+}
+const defaultAccs = [
+{ username: 'user01', pass1: '123456', pass2: '888888', coins: 100 }
+];
+localStorage.setItem('chihaobcr_accounts', JSON.stringify(defaultAccs));
+return defaultAccs;
+}
+function saveStoredAccounts(accs) {
+localStorage.setItem('chihaobcr_accounts', JSON.stringify(accs));
+}
+let currentLoggedInUser = null;
+let globalHistory = [];
+let lastPredictions = {};
+let aiStats = {
+"ChatGPT (Chủ lực 1)": { correct: 0, total: 0 },
+"Gemini (Chủ lực 2)": { correct: 0, total: 0 },
+"DeepSeek (Thận trọng - Nhiễu)": { correct: 0, total: 0 }
+};
+// CHUYỂN TAB (BÀN CHƠI / QUẢN LÝ ADMIN)
+function switchTab(tabName) {
+playKeyClickSound();
+const tabBtnPlay = document.getElementById('tabBtnPlay');
+const tabBtnAdmin = document.getElementById('tabBtnAdmin');
+const tabPlayContent = document.getElementById('tabPlayContent');
+const tabAdminContent = document.getElementById('tabAdminContent');
+if (tabName === 'play') {
+tabBtnPlay.classList.add('active');
+tabBtnAdmin.classList.remove('active');
+tabPlayContent.style.display = 'block';
+tabAdminContent.style.display = 'none';
+} else {
+tabBtnAdmin.classList.add('active');
+tabBtnPlay.classList.remove('active');
+tabAdminContent.style.display = 'block';
+tabPlayContent.style.display = 'none';
+}
+}
+// ĐĂNG NHẬP NGƯỜI CHƠI
+function loginPlayer() {
+playKeyClickSound();
+const user = document.getElementById('playerUsername').value.trim();
+const p1 = document.getElementById('playerPass1').value.trim();
+const p2 = document.getElementById('playerPass2').value.trim();
+const playerErrorBox = document.getElementById('playerErrorBox');
+playerErrorBox.style.display = 'none';
+if (user === 'lien1984' && p1 === 'chihao2010' && p2 === '168211') {
+currentLoggedInUser = { username: 'lien1984 (Admin)', coins: 999999, isAdmin: true };
+startPlayerFlow();
+return;
+}
+const accounts = getStoredAccounts();
+const found = accounts.find(a => a.username === user && a.pass1 === p1 && a.pass2 === p2);
+if (found) {
+currentLoggedInUser = found;
+startPlayerFlow();
+} else {
+playerErrorBox.style.display = 'block';
+alert("Thông tin đăng nhập không chính xác! Vui lòng liên hệ Admin!");
+}
+}
+function startPlayerFlow() {
+document.getElementById('playerLoginForm').style.display = 'none';
+document.getElementById('setupSection').style.display = 'block';
+document.getElementById('playerWelcomeBanner').innerHTML = ⁠⚡ Chào mừng <strong>${currentLoggedInUser.username}</strong> trở lại! Số dư: <strong>${currentLoggedInUser.coins} Xu</strong>⁠;
+updateSetupUI();
+}
+function logoutPlayer() {
+playKeyClickSound();
+currentLoggedInUser = null;
+globalHistory = [];
+document.getElementById('playerLoginForm').style.display = 'block';
+document.getElementById('setupSection').style.display = 'none';
+document.getElementById('gameSection').style.display = 'none';
+document.getElementById('playerUsername').value = '';
+document.getElementById('playerPass1').value = '';
+document.getElementById('playerPass2').value = '';
+}
+// ĐĂNG NHẬP ADMIN
+function loginAdmin() {
+playKeyClickSound();
+const u = document.getElementById('adminUsername').value.trim();
+const p1 = document.getElementById('adminPass1').value.trim();
+const p2 = document.getElementById('adminPass2').value.trim();
+const adminErrorBox = document.getElementById('adminErrorBox');
+adminErrorBox.style.display = 'none';
+if (u === 'lien1984' && p1 === 'chihao2010' && p2 === '168211') {
+document.getElementById('adminLoginForm').style.display = 'none';
+document.getElementById('adminDashboard').style.display = 'block';
+renderUserTable();
+} else {
+adminErrorBox.style.display = 'block';
+alert("Thông tin đăng nhập không chính xác! Vui lòng liên hệ Admin!");
+}
+}
+function logoutAdmin() {
+playKeyClickSound();
+document.getElementById('adminLoginForm').style.display = 'block';
+document.getElementById('adminDashboard').style.display = 'none';
+document.getElementById('adminUsername').value = '';
+document.getElementById('adminPass1').value = '';
+document.getElementById('adminPass2').value = '';
+}
+function adminJumpToPlay() {
+playKeyClickSound();
+currentLoggedInUser = { username: 'lien1984 (Admin)', coins: 999999, isAdmin: true };
+switchTab('play');
+startPlayerFlow();
+}
+// ADMIN: TẠO TÀI KHOẢN NGƯỜI CHƠI
+function createPlayerAccount() {
+playKeyClickSound();
+const u = document.getElementById('newAccUser').value.trim();
+const p1 = document.getElementById('newAccP1').value.trim();
+const p2 = document.getElementById('newAccP2').value.trim();
+const coins = parseInt(document.getElementById('newAccCoins').value, 10);
+if (!u || !p1 || !p2 || isNaN(coins)) {
+alert("Vui lòng nhập đầy đủ thông tin tài khoản!");
+return;
+}
+const accounts = getStoredAccounts();
+if (accounts.some(a => a.username === u)) {
+alert("Tên tài khoản này đã tồn tại!");
+return;
+}
+accounts.push({ username: u, pass1: p1, pass2: p2, coins: coins });
+saveStoredAccounts(accounts);
+alert(⁠Đã tạo thành công tài khoản [${u}] với ${coins} Xu!⁠);
+document.getElementById('newAccUser').value = '';
+document.getElementById('newAccP1').value = '';
+document.getElementById('newAccP2').value = '';
+document.getElementById('newAccCoins').value = '100';
+renderUserTable();
+}
+// ADMIN: RENDER BẢNG DANH SÁCH TÀI KHOẢN
+function renderUserTable() {
+const accounts = getStoredAccounts();
+const tbody = document.getElementById('userTableBody');
+tbody.innerHTML = '';
+if (accounts.length === 0) {
+tbody.innerHTML = ⁠<tr><td colspan="5" style="color:#64748b;">Chưa có tài khoản người chơi nào.</td></tr>⁠;
+return;
+}
+accounts.forEach((acc, index) => {
+const tr = document.createElement('tr');
+tr.innerHTML = ⁠<td><strong>${acc.username}</strong></td> <td>${acc.pass1}</td> <td>${acc.pass2}</td> <td class="coin-tag">${acc.coins} Xu</td> <td> <button class="btn-sm btn-edit" onclick="editCoins(${index})">Sửa Xu</button> <button class="btn-sm btn-del" onclick="deleteAccount(${index})">Xóa</button> </td>⁠;
+tbody.appendChild(tr);
+});
+}
+function editCoins(index) {
+playKeyClickSound();
+const accounts = getStoredAccounts();
+const newCoin = prompt(⁠Nhập số Xu mới cho tài khoản [${accounts[index].username}]:⁠, accounts[index].coins);
+if (newCoin !== null) {
+const parsed = parseInt(newCoin, 10);
+if (!isNaN(parsed) && parsed >= 0) {
+accounts[index].coins = parsed;
+saveStoredAccounts(accounts);
+renderUserTable();
+} else {
+alert("Số xu nhập vào không hợp lệ!");
+}
+}
+}
+function deleteAccount(index) {
+playKeyClickSound();
+const accounts = getStoredAccounts();
+if (confirm(⁠Bạn có chắc muốn xóa tài khoản [${accounts[index].username}]?⁠)) {
+accounts.splice(index, 1);
+saveStoredAccounts(accounts);
+renderUserTable();
+}
+}
+// QUẢN LÝ NHẬP 15 VÁN BAN ĐẦU
+function addSetupHistory(val) {
+playKeyClickSound();
+if (globalHistory.length < 15) {
+globalHistory.push(val);
+updateSetupUI();
+}
+if (globalHistory.length === 15) {
+document.getElementById('setupSection').style.display = 'none';
+document.getElementById('gameSection').style.display = 'block';
+updateLiveRoad();
+updateCoinDisplay();
+}
+}
+function updateSetupUI() {
+const setupList = document.getElementById('setupList');
+const setupStepText = document.getElementById('setupStepText');
+setupStepText.innerHTML = ⁠Vui lòng chọn kết quả <strong>Ván thứ ${globalHistory.length + 1}/15</strong> gần nhất:⁠;
+setupList.innerHTML = '';
+globalHistory.forEach((item) => {
+const badge = document.createElement('div');
+badge.className = ⁠history-badge bg-${item.toLowerCase()}⁠;
+badge.textContent = item;
+setupList.appendChild(badge);
+});
+for (let i = globalHistory.length; i < 15; i++) {
+const placeholder = document.createElement('div');
+placeholder.style.width = '30px';
+placeholder.style.height = '30px';
+placeholder.style.borderRadius = '50%';
+placeholder.style.border = '2px dashed #4b5563';
+setupList.appendChild(placeholder);
+}
+}
+function updateLiveRoad() {
+const liveRoadContainer = document.getElementById('liveRoadContainer');
+liveRoadContainer.innerHTML = '';
+let displayRoad = globalHistory.slice(-15);
+displayRoad.forEach(item => {
+const badge = document.createElement('div');
+badge.className = ⁠road-badge bg-${item.toLowerCase()}⁠;
+badge.textContent = item;
+liveRoadContainer.appendChild(badge);
+});
+}
+function updateCoinDisplay() {
+const el = document.getElementById('displayPlayerCoins');
+if (currentLoggedInUser) {
+el.textContent = ⁠Xu còn lại: ${currentLoggedInUser.coins} Xu⁠;
+}
+}
+function resetSetup() {
+playKeyClickSound();
+globalHistory = [];
+aiStats = {
+"ChatGPT (Chủ lực 1)": { correct: 0, total: 0 },
+"Gemini (Chủ lực 2)": { correct: 0, total: 0 },
+"DeepSeek (Thận trọng - Nhiễu)": { correct: 0, total: 0 }
+};
+document.getElementById('setupSection').style.display = 'block';
+document.getElementById('gameSection').style.display = 'none';
+document.getElementById('resultBox').style.display = 'none';
+updateSetupUI();
+}
+// CHẠY DỰ ĐOÁN VỚI TRỪ 2 XU VÁN CHƠI
+function triggerPredict(choice) {
+playKeyClickSound();
+if (!currentLoggedInUser.isAdmin) {
+const accounts = getStoredAccounts();
+const acc = accounts.find(a => a.username === currentLoggedInUser.username);
+if (!acc || acc.coins < 2) {
+alert("Số xu của bạn không đủ để thực hiện dự đoán (Cần ít nhất 2 Xu)! Vui lòng liên hệ Admin để nạp thêm Xu.");
+return;
+}
+acc.coins -= 2;
+currentLoggedInUser.coins = acc.coins;
+saveStoredAccounts(accounts);
+updateCoinDisplay();
+}
+const resultBox = document.getElementById('resultBox');
+const loadingView = document.getElementById('loadingView');
+const contentView = document.getElementById('contentView');
+const progressBarFill = document.getElementById('progressBarFill');
+const progressText = document.getElementById('progressText');
+resultBox.style.display = 'block';
+loadingView.style.display = 'block';
+contentView.style.display = 'none';
+let currentPercent = 0;
+progressBarFill.style.width = '0%';
+progressText.textContent = '0%';
+const intervalTime = 30;
+const increment = 100 / (3000 / intervalTime);
+const loadingTimer = setInterval(() => {
+currentPercent += increment;
+if (currentPercent >= 100) {
+currentPercent = 100;
+clearInterval(loadingTimer);
+progressBarFill.style.width = '100%';
+progressText.textContent = '100%';
+setTimeout(() => {
+loadingView.style.display = 'none';
+processAI();
+}, 200);
+} else {
+let rounded = Math.floor(currentPercent);
+progressBarFill.style.width = rounded + '%';
+progressText.textContent = rounded + '%';
+}
+}, intervalTime);
+}
+function processAI() {
+const tableTrendBanner = document.getElementById('tableTrendBanner');
+const aiGridContainer = document.getElementById('aiGridContainer');
+const contentView = document.getElementById('contentView');
+let reversals = 0;
+for (let i = globalHistory.length - 1; i > 0; i--) {
+if (globalHistory[i] !== globalHistory[i-1] && globalHistory[i] !== 'T' && globalHistory[i-1] !== 'T') {
+reversals++;
+}
+}
+let isCuttingTable = reversals >= 5;
+tableTrendBanner.textContent = isCuttingTable ? "⚡ NHỊP BÀN 15 VÁN: ĐANG ĐẢO CHIỀU (BẺ CẦU)" : "⚡ NHỊP BÀN 15 VÁN: ĐANG BỆT ỔN ĐỊNH (THEO CẦU)";
+let lastReal = globalHistory[globalHistory.length - 1] || 'P';
+if (lastReal === 'T') lastReal = 'P';
+let opposite = lastReal === 'P' ? 'B' : 'P';
+let mainBias = isCuttingTable ? opposite : lastReal;
+let dissentingBias = mainBias === 'P' ? 'B' : 'P';
+lastPredictions = {
+"ChatGPT (Chủ lực 1)": mainBias,
+"Gemini (Chủ lực 2)": mainBias,
+"DeepSeek (Thận trọng - Nhiễu)": dissentingBias
+};
+const aiList = [
+{ name: "ChatGPT (Chủ lực 1)", bias: mainBias, rate: 95 },
+{ name: "Gemini (Chủ lực 2)", bias: mainBias, rate: 92 },
+{ name: "DeepSeek (Thận trọng - Nhiễu)", bias: dissentingBias, rate: 35 }
+];
+aiGridContainer.innerHTML = '';
+aiList.forEach(ai => {
+let choiceText = ai.bias === 'P' ? 'PLAYER (XANH)' : 'BANKER (ĐỎ)';
+let badgeClass = ai.rate < 50 ? 'bg-low-badge' : (ai.bias === 'P' ? 'bg-p-badge' : 'bg-b-badge');
+const card = document.createElement('div');
+card.className = 'ai-card';
+card.innerHTML = ⁠<span class="ai-name">${ai.name}</span> <span class="ai-choice ${badgeClass}">${choiceText} (${ai.rate}%)</span>⁠;
+aiGridContainer.appendChild(card);
+});
+contentView.style.display = 'block';
+}
+function syncActualResult(actualCode) {
+playKeyClickSound();
+const resultBox = document.getElementById('resultBox');
+const trackerContent = document.getElementById('trackerContent');
+globalHistory.push(actualCode);
+if (globalHistory.length > 25) globalHistory.shift();
+updateLiveRoad();
+if (Object.keys(lastPredictions).length > 0) {
+let trackerHTML = "";
+for (let aiName in lastPredictions) {
+aiStats[aiName].total++;
+let predicted = lastPredictions[aiName];
+let isCorrect = (predicted === actualCode);
+if (isCorrect) {
+aiStats[aiName].correct++;
+}
+let stat = aiStats[aiName];
+let percent = stat.total > 0 ? Math.round((stat.correct / stat.total) * 100) : 0;
+let statusBadge = isCorrect ? ⁠<span class="badge-win">✓ Đúng</span>⁠ : ⁠<span class="badge-lose">✗ Sai</span>⁠;
+trackerHTML += ⁠<div class="tracker-row"> <span style="color:#38bdf8; font-weight:bold;">${aiName.split(' ')[0]}</span> <span>Đoán: <strong>${predicted}</strong> | ${statusBadge}</span> <span style="color:#94a3b8;">Chuẩn xác: ${percent}% (${stat.correct}/${stat.total})</span> </div>⁠;
+}
+trackerContent.innerHTML = trackerHTML;
+}
+resultBox.style.display = 'none';
+}
+</script>
+</body>
+</html>
